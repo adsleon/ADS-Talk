@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/default_padding">
+
+    <ImageView
+        android:id="@+id/iv_book_cover"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Las crónicas de Narnia: El León La bruja y el armario"
+        android:layout_toRightOf="@+id/iv_book_cover"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_toEndOf="@+id/iv_book_cover"/>
+
+    <TextView
+        android:id="@+id/tv_author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="C.S. Lewis"
+        android:textSize="12sp"
+        android:layout_toRightOf="@+id/iv_book_cover"
+        android:layout_toEndOf="@+id/iv_book_cover"
+        android:layout_below="@+id/tv_title"/>
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        tools:text="22/10/2017"
+        android:textSize="12sp"
+        android:alpha="0.5"
+        android:layout_below="@+id/tv_author"/>
+
+</RelativeLayout>
